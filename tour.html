@@ -27,7 +27,7 @@
                 <p>안녕하세요</p>
             </div>
             <div class="swiper-slide">
-                <h2>입사 후 포부(혹은 운명에 맡긴 나의 선택에 대한 소회)</h2>
+                <h2>입사 후 포부</h2>
                 <p>그냥 같이 놀자"는 달콤한 유혹에 혹해서 수락했던 순간, 제 인생에 또다른 획 하나가 그어졌습니다.</p>
                 <p>이제 저는 이 회사의 당당한(?) 일원이 된 것입니다.</p>
             </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="swiper-slide">
                 <h2>가장 기대되는 점</h2>
-                <p>사실 가장 설레는 건 여기저기 돌아다니면서 친구들과 재미난 추억을 쌓는 것입니다. </p>
+                <p>사실 가장 설레는 건 여기저기 돌아다니면서 재미난 추억을 쌓는 것입니다. </p>
                 <p>장소에서 새로운 경험을 하고, 나중에 "그때 우리 거기 갔을 때 말이야~"라고 회상할 수 있는 그런 순간들을 만들어가는 게 진짜 목표예요.</p>
             </div>
             <div class="swiper-slide">
@@ -60,35 +60,33 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-                allowTouchMove: true,
-                on: {
-                    slideChange: function() {
-                        // 5번째 슬라이드(인덱스 4)에서 6번째 슬라이드(인덱스 5)로 넘어갈 때
-                        if (this.activeIndex === 5) {
-                            // 스와이프 잠시 비활성화
-                            this.allowTouchMove = false;
-                            
-                            // 팝업 표시
-                            const popup = document.getElementById('salaryPopup');
-                            popup.classList.add('show');
-                            
-                            // 1.5초 후 팝업 숨기고 다음 슬라이드로
-                            setTimeout(() => {
-                                popup.classList.remove('show');
-                                
-                                // 0.3초 후 다음 슬라이드로 이동하고 스와이프 재활성화
-                                setTimeout(() => {
-                                    this.slideNext();
-                                    this.allowTouchMove = true;
-                                }, 300);
-                            }, 1500);
-                        }
-                    }
-                }
-            });
+       var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+    allowTouchMove: true,
+    on: {
+        slideChange: function () {
+            // 인덱스 5 (6번째 슬라이드) 도달 시 팝업 처리
+            if (this.activeIndex === 5 && !this._popupShown) {
+                this.allowTouchMove = false; // 스와이프 잠금
+
+                const popup = document.getElementById('salaryPopup');
+                popup.classList.add('show'); // 팝업 표시
+
+                // 팝업 1.5초 후 닫고, 다시 스와이프 활성화
+                setTimeout(() => {
+                    popup.classList.remove('show');
+
+                    setTimeout(() => {
+                        this.allowTouchMove = true; // 다시 스와이프 가능
+                    }, 300);
+                }, 1500);
+
+                this._popupShown = true; // 팝업 중복 방지
+            }
+        }
+    }
+});
     </script>
 </body>
 
