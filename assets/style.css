@@ -36,7 +36,14 @@ li:hover {
 
 .plane {
   width: 100px;
+  position: relative;
   animation: fly 5s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes fly {
+  0% { transform: translateX(-150px) rotate(-5deg); }
+  100% { transform: translateX(100vw) rotate(5deg); }
 }
 
 @keyframes fadeInUp {
@@ -50,7 +57,6 @@ li:hover {
   }
 }
 
-@keyframes fly {
-  0% { transform: translateX(-100px) rotate(-5deg); }
-  100% { transform: translateX(100vw) rotate(5deg); }
+.hidden {
+  display: none;
 }
