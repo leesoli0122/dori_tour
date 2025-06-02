@@ -12,53 +12,84 @@
 </head>
 
 <body>
-  <!-- Swiper -->
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <p>안녕하세요</p>
+    <!-- 팝업 오버레이 -->
+    <div class="popup-overlay" id="salaryPopup" >
+        <div class="popup-content">
+            <h3>아, 잠깐!</h3>
+            <p class="popup-highlight">월급...주시는 건가요?<br/>없으면 사랑도 괜찮습니다...🥲</p>
         </div>
-        <div class="swiper-slide">
-            <h2>입사 후 포부(혹은 운명에 맡긴 나의 선택에 대한 소회)</h2>
-            <p>그냥 같이 놀자"는 달콤한 유혹에 혹해서 수락했던 순간, 제 인생에 또다른 획 하나가 그어졌습니다.</p>
-            <p>이제 저는 이 회사의 당당한(?) 일원이 된 것입니다.</p>
-        </div>
-        <div class="swiper-slide">
-            <h2>목표 - 인생 레벨업 로드맵</h2>
-            <p><b>3개월차:</b> 주말 모임에서 항상 재미있는 놀거리 제안하는 기술 습득</p>
-            <p><b>1년차:</b> 주말 모임 조기 시작해서 더 오래 놀기 전문가(1년도 안 걸릴 듯)</p>
-        </div>
-        <div class="swiper-slide">
-            <h2>가장 기대되는 점</h2>
-            <p>사실 가장 설레는 건 여기저기 돌아다니면서 친구들과 재미난 추억을 쌓는 것입니다. </p>
-            <p>장소에서 새로운 경험을 하고, 나중에 "그때 우리 거기 갔을 때 말이야~"라고 회상할 수 있는 그런 순간들을 만들어가는 게 진짜 목표예요.</p>
-        </div>
-        <div class="swiper-slide">
-            <h2>깊은 성찰과 다짐</h2>
-            <p>돌이켜보니 인생의 중요한 선택들은 항상 "어? 그래?"라는 가벼운 대답에서 시작되었습니다.</p>
-            <p>대학교도 그랬고, 첫 직장도 그랬고, 이번 회사도 마찬가지네요.</p>
-            <p>하지만 이제 와서 후회해봐야 소용없으니, 이왕 시작한 거 제대로 해보겠습니다. </p>
-            <p>월급날만 기다리는 직원이 아닌, 진정으로 회사와 함께 성장하는... <span>아, 잠깐, 월급 얼마 주시는 거죠?</span></p>
-        </div>
-        <div class="swiper-slide">
-            <p>결국 인생이란 예상치 못한 순간의 연속이고, 저는 그 흐름에 몸을 맡겨 여기까지 왔습니다. 이제 이 회사에서 어떤 레전드를 만들어갈지 기대해주세요. 최소한 지각은 안 하겠습니다.</p>
-            <p>(교통상황 허락 하에)</p>
-        </div>
-        <div class="swiper-slide">감사합니다</div>
     </div>
-  </div>
+    <!-- Swiper -->
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p>안녕하세요</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>입사 후 포부(혹은 운명에 맡긴 나의 선택에 대한 소회)</h2>
+                <p>그냥 같이 놀자"는 달콤한 유혹에 혹해서 수락했던 순간, 제 인생에 또다른 획 하나가 그어졌습니다.</p>
+                <p>이제 저는 이 회사의 당당한(?) 일원이 된 것입니다.</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>목표 - 인생 레벨업 로드맵</h2>
+                <p><b>3개월차:</b> 주말 모임에서 항상 재미있는 놀거리 제안하는 기술 습득</p>
+                <p><b>1년차:</b> 주말 모임 조기 시작해서 더 오래 놀기 전문가(1년도 안 걸릴 듯)</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>가장 기대되는 점</h2>
+                <p>사실 가장 설레는 건 여기저기 돌아다니면서 친구들과 재미난 추억을 쌓는 것입니다. </p>
+                <p>장소에서 새로운 경험을 하고, 나중에 "그때 우리 거기 갔을 때 말이야~"라고 회상할 수 있는 그런 순간들을 만들어가는 게 진짜 목표예요.</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>깊은 성찰과 다짐</h2>
+                <p>돌이켜보니 인생의 중요한 선택들은 항상 "어? 그래?"라는 가벼운 대답에서 시작되었습니다.</p>
+                <p>대학교도 그랬고, 첫 직장도 그랬고, 이번 회사도 마찬가지네요.</p>
+                <p>하지만 이제 와서 후회해봐야 소용없으니, 이왕 시작한 거 제대로 해보겠습니다. </p>
+            </div>
+            <div class="swiper-slide">
+                <p>결국 인생이란 예상치 못한 순간의 연속이고, 저는 그 흐름에 몸을 맡겨 여기까지 왔습니다. 이제 이 회사에서 어떤 레전드를 만들어갈지 기대해주세요. 최소한 지각은 안 하겠습니다.</p>
+                <p>(교통상황 허락 하에)</p>
+            </div>
+            <div class="swiper-slide">감사합니다</div>
+        </div>
+    </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+                allowTouchMove: true,
+                on: {
+                    slideChange: function() {
+                        // 5번째 슬라이드(인덱스 4)에서 6번째 슬라이드(인덱스 5)로 넘어갈 때
+                        if (this.activeIndex === 5) {
+                            // 스와이프 잠시 비활성화
+                            this.allowTouchMove = false;
+                            
+                            // 팝업 표시
+                            const popup = document.getElementById('salaryPopup');
+                            popup.classList.add('show');
+                            
+                            // 1.5초 후 팝업 숨기고 다음 슬라이드로
+                            setTimeout(() => {
+                                popup.classList.remove('show');
+                                
+                                // 0.3초 후 다음 슬라이드로 이동하고 스와이프 재활성화
+                                setTimeout(() => {
+                                    this.slideNext();
+                                    this.allowTouchMove = true;
+                                }, 300);
+                            }, 1500);
+                        }
+                    }
+                }
+            });
+    </script>
 </body>
 
 </html>
