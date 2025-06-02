@@ -9,7 +9,8 @@
 </head>
 <body>
   <section id="welcome">
-    <h1>🎉 탑승자 임수인, 환영합니다! 🎉</h1>
+    <img src="assets/plane.png" alt="비행기 이미지" class="plane" />
+    <h1 id="typewriter"></h1>
     <p>지금부터 동천투어 여정이 시작됩니다.</p>
   </section>
 
@@ -22,9 +23,9 @@
   <section id="highlight">
     <h2>✨ 탐험의 하이라이트</h2>
     <ul>
-      <li>😆 같이 미친 척 해줄 사람들</li>
-      <li>🚀 기획이 말도 안 되는데 실행이 되는 팀</li>
-      <li>💻 여행을 가장 잘 아는 웹퍼블리셔가 된다는 자부심</li>
+      <li onclick="highlightClicked(this)">😆 같이 미친 척 해줄 사람들</li>
+      <li onclick="highlightClicked(this)">🚀 기획이 말도 안 되는데 실행이 되는 팀</li>
+      <li onclick="highlightClicked(this)">💻 여행을 가장 잘 아는 웹퍼블리셔가 된다는 자부심</li>
     </ul>
   </section>
 
@@ -33,5 +34,7 @@
     <p>탐험 브리핑 종료. 이제 출발해볼까요?</p>
     <p><strong>Welcome aboard, Dongcheon Tour.</strong></p>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
