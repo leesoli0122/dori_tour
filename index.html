@@ -1,42 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>동천투어 탑승 페이지</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>동천 투어</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <section id="welcome">
-    <img src="assets/plane.png" alt="비행기 이미지" class="plane hidden" id="plane" />
-    <h1 id="typewriter"></h1>
-    <p id="message1" class="hidden">본 여정은 현실과 상상을 넘나드는 교육 여행으로<br/>귀하의 재능과 열정을 모두 끌어낼 준비가 되어 있습니다.</p>
-    <p id="message2" class="hidden">곧, 브리핑을 시작하겠습니다.</p>
-  </section>
-
-  <section id="mission">
-    <h2>🧭 입사 후 포부</h2>
-    <p>여행과 교육, 웹과 콘텐츠, 그 모든 교차점에서 새로운 방향을 제시하는 퍼블리셔가 되겠습니다.</p>
-    <p>가장 창의적인 일정표는 엑셀로, 가장 유쾌한 추억은 마크업으로 기록할 수 있도록!</p>
-    <p>“나 저기 동천이랑 같이 했었다”는 말이 자랑이 되게 만들고 싶습니다.</p>
-  </section>
-
-  <section id="highlight">
-    <h2>✨ 탐험의 하이라이트</h2>
-    <ul>
-      <li onclick="highlightClicked(this)">😆 같이 미친 척 해줄 사람들</li>
-      <li onclick="highlightClicked(this)">🚀 기획이 말도 안 되는데 실행이 되는 팀</li>
-      <li onclick="highlightClicked(this)">💻 여행을 가장 잘 아는 웹퍼블리셔가 된다는 자부심</li>
-    </ul>
-  </section>
-
-  <section id="ending">
-    <h2>✅ 입국 완료!</h2>
-    <p>탐험 브리핑 종료.<br/>탑승자 이솔, 당신의 여정은 지금 시작됩니다.</p>
-    <p><strong>🧳 Welcome aboard, Dongcheon Tour.</strong></p>
-  </section>
-
-  <script src="script.js"></script>
+  <main>
+    <section class="page section1">
+      <h1>환영합니다</h1>
+      <img src="assets/plane.png" alt="비행기" class="plane" />
+      <button class="next-btn">다음</button>
+    </section>
+    <section class="page section2">
+      <p>본 여정은 현실과 상상을 넘나드는 교육 여행으로<br/>저의 재능과 열정을 모두 끌어낼 준비가 되어 있습니다.</p>
+      <p>곧, 브리핑을 시작하겠습니다.</p>
+      <button class="next-btn">다음</button>
+    </section>
+    <section class="page section3">
+      <h2>입사 후 포부(혹은 운명에 맡긴 나의 선택에 대한 소회)</h2>
+      <p>그냥 같이 놀자"는 달콤한 유혹에 혹해서 수락했던 순간, 제 인생에 또다른 획 하나가 그어졌습니다.</p>
+      <p>이제 저는 이 회사의 당당한(?) 일원이 된 것입니다.</p>
+      <button class="next-btn">다음</button>
+    </section>
+    <section class="page section4">
+      <h2>목표 - 인생 레벨업 로드맵</h2>
+      <p><b>3개월차:</b> 주말 모임에서 항상 재미있는 놀거리 제안하는 기술 습득</p>
+      <p><b>1년차:</b> 주말 모임 조기 시작해서 더 오래 놀기 전문가(1년도 안 걸릴 듯)</p>
+      <button class="next-btn">다음</button>
+    </section>
+    <section class="page section5">
+      <h2>가장 기대되는 점</h2>
+      <p>사실 가장 설레는 건 여기저기 돌아다니면서 친구들과 재미난 추억을 쌓는 것입니다. </p>
+      <p>장소에서 새로운 경험을 하고, 나중에 "그때 우리 거기 갔을 때 말이야~"라고 회상할 수 있는 그런 순간들을 만들어가는 게 진짜 목표예요.</p>
+      <button class="next-btn">다음</button>
+    </section>
+    <section class="page section6">
+      <h2>깊은 성찰과 다짐</h2>
+      <p>돌이켜보니 인생의 중요한 선택들은 항상 "어? 그래?"라는 가벼운 대답에서 시작되었습니다.</p>
+      <p>대학교도 그랬고, 첫 직장도 그랬고, 이번 회사도 마찬가지네요.</p>
+      <p>하지만 이제 와서 후회해봐야 소용없으니, 이왕 시작한 거 제대로 해보겠습니다. </p>
+      <p>월급날만 기다리는 직원이 아닌, 진정으로 회사와 함께 성장하는... <span>아, 잠깐, 월급 얼마 주시는 거죠?</span></p>
+      <button class="next-btn">아무튼</button>
+    </section>
+    <section class="page section7">
+      <p>결국 인생이란 예상치 못한 순간의 연속이고, 저는 그 흐름에 몸을 맡겨 여기까지 왔습니다. 이제 이 회사에서 어떤 레전드를 만들어갈지 기대해주세요. 최소한 지각은 안 하겠습니다.</p>
+      <p>(교통상황 허락 하에)</p>
+      <button class="next-btn">곧 끝남;;</button>
+    </section>
+    <section class="page section8">
+      <h2>입사 완료!</h2>
+      <p>탐험 브리핑 종료.<br/>탑승자 이솔, 당신의 여정은 지금 시작됩니다.</p>
+      <p><strong>🧳 Welcome aboard, Dongcheon Tour.</strong></p>
+    </section>
+  </main>
 </body>
+<script src="assets/script.js"></script>
 </html>

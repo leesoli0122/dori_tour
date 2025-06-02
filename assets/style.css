@@ -1,62 +1,90 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #fef9e7;
-  color: #333;
-  text-align: center;
-  padding: 40px 20px;
-}
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
 
-section {
-  margin-bottom: 60px;
-  animation: fadeInUp 1s ease both;
-}
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-h1, h2 {
-  color: #f39c12;
-}
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-li {
-  font-size: 1.2em;
-  margin: 10px 0;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
+    .swiper {
+      width: 240px;
+      height: 320px;
+    }
 
-li:hover {
-  transform: scale(1.05);
-  color: #d35400;
-}
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
 
-.plane {
-  width: 100px;
-  position: relative;
-  animation: fly 5s linear infinite;
-  margin-top: 20px;
-}
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
 
-@keyframes fly {
-  0% { transform: translateX(-150px) rotate(-5deg); }
-  100% { transform: translateX(100vw) rotate(5deg); }
-}
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
 
-.hidden {
-  display: none;
-}
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
